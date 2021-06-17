@@ -20,8 +20,9 @@
         .header {
             height:215px;
             background: grey;
+            overflow: hidden;
         }
-        .header img {width: 100%; height: auto;}
+        .header img {width: auto; height: auto;}
         video {
             width:100%;
             height:100vh;
@@ -42,7 +43,7 @@
         $(function() {
             $.scrollify({
                 section:".panel",
-                interstitialSection:".header,.footer",
+                interstitialSection:".header",
                 // easing:"easeOutQuad",
                 scrollSpeed:500,
                 // scrollbars:false,
