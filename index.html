@@ -11,24 +11,25 @@
         p {margin: 0;}
         .img-box img {
             width:100%;
-            height: 100vh;
+            /* height: 100vh; */
         }
         .panel img {
-            width: 100%;
+            width: 100;
         }
         .footer,
         .header {
-            height:100px;
+            height:215px;
             background: grey;
         }
+        .header img {width: 100%; height: auto;}
         video {
             width:100%;
             height:100vh;
             object-fit:fill;
         }
         .panel {
-            width:100%;
-            height: 100vh;
+            width:auto;
+            /* height: 100vh; */
             margin: 0 auto;
             text-align: center;
         }
@@ -43,10 +44,10 @@
                 section:".panel",
                 // easing:"easeOutQuad",
                 scrollSpeed:500,
-                scrollbars:false,
+                // scrollbars:false,
                 sectionName:false,
                 setHeights:false,
-                overflowScroll:false,
+                // overflowScroll:true,
             });
 
             
@@ -55,17 +56,22 @@
 </head>
 <body> 
     <div class="container">
-        <section class="panel" data-section-name="m1"  style="background:#000">
+        <div class="header">
+			<div class="inner">
+				<div class="img-box"><img src="./header.jpg" /></div>
+			</div>
+		</div>
+        <section class="panel" data-section-name="m1"  style="background: url('./1_bg.jpg') repeat-x left bottom;">
 			<video id="vedio1" poster="./1_thumb.jpg" controls="false">
 				<source src="./1.mp4" type="video/mp4">
 
 			  Your browser does not support HTML5 video.
 			</video>
 		</section>
-        <section class="panel" style="background:#fff">
+        <section class="panel" style="background: url('./2_bg.jpg') repeat-x left bottom; background-size: cover;">
             <div class="img-box"><img src="./2.jpg" /></div>
         </section>
-        <section class="panel" style="background:#fff">
+        <section class="panel" style="background: url('./3_bg.jpg') repeat-x left bottom;">
             <div class="img-box"><img src="./3.jpg" /></div>
         </section>
         <section class="panel" style="background:#fff">
